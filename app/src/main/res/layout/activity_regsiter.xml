@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Regsiter">
+
+    <EditText
+        android:id="@+id/RegEmail"
+        android:layout_width="292dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="Enter email"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/RegPass"
+        android:layout_width="296dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter pass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegEmail" />
+
+    <Button
+        android:id="@+id/regReg"
+        android:layout_width="156dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="65dp"
+        android:text="Register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegPass" />
+
+    <Button
+        android:id="@+id/regLogin"
+        android:layout_width="156dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="44dp"
+        android:text="Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regReg" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="174dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="38dp"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/regWithGoogle"
+        android:layout_width="304dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="33dp"
+        android:text="SignUp with Google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
